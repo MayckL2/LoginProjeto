@@ -8,30 +8,34 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="checaTam()" onload="checaTam()">
     <main>
         <form class="login" action="">
             <h2>LOGIN</h2>
             <label for="email">E-mail</label>
-            <input autocomplete="off" onfocus="expandLogin()" type="text" name="email">
+            <input class="input" autocomplete="off" onfocus="expandLogin()" type="text" name="email">
             <label for="senha">Senha</label>
-            <input autocomplete="off" onfocus="expandLogin()" type="text" name="senha">
+            <input class="input" autocomplete="off" onfocus="expandLogin()" type="text" name="senha">
             <input type="submit">
+            
+            <a class="volta" href="">Voltar</a>
         </form>
 
         <form class="cadastro" action="">
             <h2>CADASTRO</h2>
             <label for="email">E-mail</label>
-            <input autocomplete="off" onfocus="expandCadastro()" type="text" name="email">
+            <input class="input2" autocomplete="off" onfocus="expandCadastro()" type="text" name="email">
             <label for="nome">Nome</label>
-            <input autocomplete="off" onfocus="expandCadastro()" type="text" name="nome">
+            <input class="input2" autocomplete="off" onfocus="expandCadastro()" type="text" name="nome">
             <label for="cpf">CPF</label>
-            <input autocomplete="off" onfocus="expandCadastro()" type="text" name="cpf">
+            <input class="input2" autocomplete="off" onfocus="expandCadastro()" type="text" name="cpf">
             <label for="senha">Senha</label>
-            <input autocomplete="off" onfocus="expandCadastro()" type="text" name="senha">
+            <input class="input2" autocomplete="off" onfocus="expandCadastro()" type="text" name="senha">
             <label for="confSenha">Confirmar Senha</label>
-            <input autocomplete="off" onfocus="expandCadastro()" type="text" name="confSenha">
+            <input class="input2" autocomplete="off" onfocus="expandCadastro()" type="text" name="confSenha">
             <input type="submit">
+
+            <a class="volta" href="">Voltar</a>
         </form>
     </main>
 
